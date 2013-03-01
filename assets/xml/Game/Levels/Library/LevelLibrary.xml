@@ -1,0 +1,21 @@
+<GameObject id="Game Play Object Library">
+	<Transform />
+	
+	<Include file="xml/Game/Levels/Library/Floor.xml" />
+	<Include file="xml/Game/Levels/Library/Box.xml" />
+	<Include file="xml/Game/Levels/Library/DeadZone.xml" />
+	<Include file="xml/Game/Levels/Library/Coin.xml" />
+	
+	<Include file="xml/Game/Levels/Sections/TestSection001.xml" />
+	<Include file="xml/Game/Levels/Sections/TestSection002.xml" />
+	
+	<Include file="xml/Game/Levels/Background/Section001.xml" />
+	<Include file="xml/Game/Levels/Background/Section002.xml" />
+	
+	<Include file="xml/Game/Guards/Guard001.xml" />
+	
+	<!-- Powerups -->
+	<Include file="xml/Game/Powerups/Powerup.xml" />
+	<Include file="xml/Game/Powerups/Magnet.xml" />
+	<Include file="xml/Game/Powerups/Boost.xml" />
+</GameObject>

@@ -1,0 +1,27 @@
+<AnimationClip>
+	<Keyframe time="0.0">
+		<Key field="mMaterial.mColour.mRed" value="1.0f" />
+		<Key field="mMaterial.mColour.mGreen" value="0.0f" />
+		<Key field="mMaterial.mColour.mBlue" value="1.0f" />
+	</Keyframe>
+	
+	<Keyframe time="1.0">
+		<Key field="mMaterial.mColour.mRed" value="1.0f" />
+		<Key field="mMaterial.mColour.mGreen" value="1.0f" />
+		<Key field="mMaterial.mColour.mBlue" value="1.0f" />
+	</Keyframe>
+	
+	<GameObject id="text">
+		<Keyframe time="0.0">
+			<Key field="mMaterial.mColour.mRed" value="1.0f" />
+			<Key field="mMaterial.mColour.mGreen" value="1.0f" />
+			<Key field="mMaterial.mColour.mBlue" value="1.0f" />
+		</Keyframe>
+		
+		<Keyframe time="1.0">
+			<Key field="mMaterial.mColour.mRed" value="0.0f" />
+			<Key field="mMaterial.mColour.mGreen" value="0.0f" />
+			<Key field="mMaterial.mColour.mBlue" value="0.0f" />
+		</Keyframe>
+	</GameObject>
+</AnimationClip>

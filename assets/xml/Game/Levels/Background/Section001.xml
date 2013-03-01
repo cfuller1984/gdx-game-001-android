@@ -1,0 +1,10 @@
+<GameObject id="bg-section001">
+	<Transform />
+	<BackgroundSection />
+
+	<!-- House -->
+	<GameObject>
+		<Transform x="0" y="700" size-x="180" size-y="300" valign="bottom" />
+		<Quad texture="gfx/house001.png" texture-width="180" texture-height="300" />
+	</GameObject>
+</GameObject>

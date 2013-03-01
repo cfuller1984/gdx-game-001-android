@@ -1,0 +1,15 @@
+<GameObject id="player">
+	<Transform x="50" y="300" size-x="64" size-y="64" align="center" valign="bottom" />
+	<Material r="0.0" g="0.0" b="1.0" alpha="1.0" />
+
+	<Quad texture="gfx/player.png" texture-width="256" texture-height="308" texture-frame-cols="6" texture-frame-rows="6" />
+	<RigidBody density="5.0f" friction="0.0f" fixed-rotation="true" />
+
+	<Player />
+	<PlayerController maxTouchSpeed="300.0f" initialSpeed="5.0f" maxSpeed="15.0f" jumpHeight="150.0f" boostSpeed="5.0f" boostAccelerationTime="2.0f" />
+	
+	<Animation>
+		<AnimationClip path="xml/Library/Game/Player/run.xml" />
+		<AnimationClip path="xml/Library/Game/Player/slide.xml" />
+	</Animation>
+</GameObject>

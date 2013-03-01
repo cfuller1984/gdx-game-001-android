@@ -1,0 +1,10 @@
+<GameObject id="magnetpowerup" inherit-from="powerup">
+	<GameObject id="collectable" tag="powerup">
+		<Transform x="0" y="0" size-x="32" size-y="32" align="center" valign="middle" />
+		<!--RigidBody sensor="true" static="true" /-->
+		
+		<Quad texture="gfx/powerups/magnet.png" texture-width="32" texture-height="32" />
+	</GameObject>
+	
+	<MagnetPowerup />
+</GameObject>

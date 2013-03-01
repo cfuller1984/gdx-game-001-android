@@ -1,0 +1,7 @@
+<GameObject id="coin" tag="coin">
+	<Transform size-x="32" size-y="32" align="center" valign="middle" />
+	<!--RigidBody sensor="true" static="true" /-->
+	<Quad texture="gfx/coin.png" texture-width="32" texture-height="32" />
+	
+	<Coin value="1" />
+</GameObject>

@@ -1,0 +1,7 @@
+<GameObject id="floor" tag="floor">
+	<Transform x="0" y="0" size-x="400" size-y="20" align="center" valign="top" />
+	<Material r="1.0" g="1.0" b="1.0" alpha="1.0f" />
+
+	<Quad />
+	<RigidBody static="true" friction="0.01f" />
+</GameObject>

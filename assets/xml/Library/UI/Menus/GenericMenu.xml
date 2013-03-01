@@ -1,0 +1,25 @@
+<GameObject id="Generic Menu">
+	<Transform x="640" y="360" size-x="1280" size-y="720" align="center" valign="middle" />
+	<Material r="0.0" g="0.0" b="0.0" alpha="0.5" />
+	
+	<Quad />
+	
+	<UIMenu />
+	
+	<!-- Menu Options -->
+	<GameObject id="option00" inherit-from="genericoption">
+		<Transform x="640" y="190" />
+	</GameObject>
+	
+	<GameObject id="option01" inherit-from="genericoption">
+		<Transform x="640" y="250" />
+	</GameObject>
+	
+	<GameObject id="option02" inherit-from="genericoption">
+		<Transform x="640" y="310" />
+	</GameObject>
+	
+	<GameObject id="option03" inherit-from="genericoption">
+		<Transform x="640" y="370" />
+	</GameObject>
+</GameObject>

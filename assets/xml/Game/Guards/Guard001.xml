@@ -1,0 +1,9 @@
+<GameObject id="guard001" tag="Guard">
+	<Transform x="0" y="700" size-x="32" size-y="64" align="center" valign="bottom" />
+	<Material r="1.0" g="1.0" b="1.0" alpha="1.0" />
+	
+	<RigidBody density="0.0" ignoreGravity="true" />
+	<Guard />
+	
+	<Quad texture="gfx/guard001.png" texture-width="32" texture-height="64" />
+</GameObject>

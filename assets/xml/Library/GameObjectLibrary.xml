@@ -1,0 +1,12 @@
+<GameObject id="Game Object Library">
+	<Include file="xml/Library/UI/Misc/Objective/Objective.xml" />
+	<Include file="xml/Library/UI/Misc/Stat/Stat.xml" />
+	<Include file="xml/Library/UI/Options/GenericOption/GenericOption.xml" />
+	
+	<Include file="xml/Library/UI/Menus/HoldingMenu.xml" />
+	<Include file="xml/Library/UI/Menus/GenericMenu.xml" />
+	<Include file="xml/Library/UI/Menus/ObjectivesMenu.xml" />
+	<Include file="xml/Library/UI/Menus/StatsMenu.xml" />
+	
+	<Include file="xml/Library/Game/Player/Player.xml" />
+</GameObject>

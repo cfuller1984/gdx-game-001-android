@@ -1,0 +1,25 @@
+<GameObject id="statoption">
+	<Transform x="640" y="360" size-x="640" size-y="160" align="center" valign="middle" />
+	<Material r="1.0" g="1.0" b="1.0" alpha="0.8" />
+	
+	<Animation>
+		<AnimationClip path="xml/Library/UI/Misc/Stat/SlideOn.xml" />
+		<AnimationClip path="xml/Library/UI/Misc/Stat/SlideOff.xml" />
+	</Animation>
+	
+	<Quad />
+	
+	<GameObject id="title">
+		<Transform x="40" y="40" />
+		<Material r="0.0" g="0.0" b="0.0" alpha="1.0" />
+		
+		<Text text="Title" />
+	</GameObject>
+	
+	<GameObject id="details">
+		<Transform x="40" y="100" size-x="640" />
+		<Material r="0.3" g="0.3" b="0.3" alpha="1.0" />
+		
+		<Text text="Details of the stat." />
+	</GameObject>
+</GameObject>

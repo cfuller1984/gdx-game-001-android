@@ -1,0 +1,22 @@
+<GameObject id="bg-section002">
+	<Transform />
+	<BackgroundSection />
+
+	<!-- House -->
+	<GameObject>
+		<Transform x="0" y="700" size-x="180" size-y="300" valign="bottom" />
+		<Quad texture="gfx/house001.png" texture-width="180" texture-height="300" />
+	</GameObject>
+	
+	<!-- House -->
+	<GameObject>
+		<Transform x="180" y="700" size-x="200" size-y="300" valign="bottom" />
+		<Quad texture="gfx/house002.png" texture-width="200" texture-height="300" />
+	</GameObject>
+	
+	<!-- Cars -->
+	<GameObject>
+		<Transform x="380" y="700" size-x="200" size-y="100" valign="bottom" />
+		<Quad texture="gfx/cars001.png" texture-width="200" texture-height="100" />
+	</GameObject>
+</GameObject>

@@ -1,0 +1,44 @@
+<GameObject>
+	<Transform />
+	<GameHUD />
+	
+	<!-- Score -->
+	<GameObject id="score">
+		<Transform x="20" y="20" />
+		<Material r="1.0" g="1.0" b="1.0" alpha="1.0" />
+		
+		<Text text="Score: 000000" />
+	</GameObject>
+	
+	<!-- Coins -->
+	<GameObject id="coins">
+		<Transform x="1260" y="20" align="right" />
+		<Material r="1.0" g="1.0" b="1.0" alpha="1.0" />
+		
+		<Text text="Coins: 000000" />
+	</GameObject>
+	
+	<!-- Framerate -->
+	<GameObject id="fps">
+		<Transform x="20" y="620" />
+		<Material r="1.0" g="1.0" b="1.0" alpha="1.0" />
+		
+		<Text text="FPS: 60.000" />
+	</GameObject>
+	
+	<!-- Debug Data -->
+	<!--GameObject id="debug">
+		<Transform x="20" y="50" />
+		<Material r="1.0" g="1.0" b="1.0" alpha="1.0" />
+		
+		<Text text="Debug data debug data debug data debug data debug data debug data" />
+	</GameObject-->
+	
+	<!-- Pause button -->
+	<GameObject id="pause">
+		<Transform x="1180" y="620" size-x="100" size-y="100" />
+		
+		<Quad texture="gfx/hud/pause.png" texture-width="50" texture-height="50" />
+		<TouchCollider />
+	</GameObject>
+</GameObject>

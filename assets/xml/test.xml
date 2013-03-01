@@ -1,0 +1,21 @@
+<Scene>
+	<GameObject id="Main Camera">
+		<Transform x="0" y="0" />
+		<Camera ortho="true" viewportWidth="1280" viewportHeight="720" />
+	</GameObject>
+	
+	<GameObject id="Root Object">
+		<Transform x="150.0f" y="150.0f" size-x="100.0f" size-y="100.0f" rotation-z="20.0f" align="center" valign="middle" />
+		<Material r="1.0f" g="1.0f" b="1.0f" alpha="1.0f" />
+		
+		<Quad texture="gfx/box.png" />
+		<!--TouchCollider /-->
+		
+		<GameObject id="Test Object">
+			<Transform x="75.0f" y="75.0f" size-x="50.0f" size-y="50.0f" rotation-z="20.0f" align="center" valign="middle" />
+			<Material r="1.0f" g="1.0f" b="1.0f" alpha="1.0f" />
+		
+			<Quad texture="gfx/box.png" />
+		</GameObject>
+	</GameObject>
+</Scene>

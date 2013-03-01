@@ -1,0 +1,13 @@
+<GameObject id="Holding Menu">
+	<Transform x="640" y="360" size-x="1280" size-y="720" align="center" valign="middle" />
+	<Material r="0.0" g="0.0" b="0.0" alpha="0.5" />
+	
+	<Quad />
+	
+	<UIMenu />
+	
+	<!-- Menu Options -->
+	<GameObject id="option00" inherit-from="genericoption">
+		<Transform x="640" y="240" />
+	</GameObject>
+</GameObject>

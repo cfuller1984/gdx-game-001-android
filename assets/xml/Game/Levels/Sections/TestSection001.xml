@@ -1,0 +1,44 @@
+<GameObject id="testsection001">
+	<Transform />
+	<LevelSection />
+	
+	<!-- Floor Piece -->
+	<GameObject inherit-from="floor">
+		<Transform x="640" y="700" size-x="1280" />
+	</GameObject>
+	
+	<GameObject inherit-from="box">
+		<Transform x="450" y="700" />
+		<Material r="1.0" g="1.0" b="1.0" alpha="1.0f" />
+	</GameObject>
+	
+	<!--GameObject>
+		<Transform x="450" y="340" />
+		<Material r="1.0" g="1.0" b="1.0" alpha="1.0f" />
+		
+		<ParticleSystem texture="box.png" />
+	</GameObject-->
+	
+	<!-- Dead Zone -->
+	<!--GameObject inherit-from="deadzone">
+		<Transform x="650" y="410" size-x="100" size-y="50" />
+	</GameObject-->
+	
+	<!-- Floor Piece -->
+	<!--GameObject inherit-from="floor">
+		<Transform x="900" y="400" size-x="400" />
+	</GameObject-->
+	
+	<!-- Box -->
+	<GameObject inherit-from="box">
+		<Transform x="825" y="700" />
+	</GameObject>
+	<GameObject inherit-from="box">
+		<Transform x="825" y="650" />
+	</GameObject>
+	
+	<!-- Dead Zone -->
+	<!--GameObject inherit-from="deadzone">
+		<Transform x="1150" y="410" size-x="100" size-y="50" />
+	</GameObject-->
+</GameObject>

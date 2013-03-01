@@ -1,0 +1,41 @@
+<GameObject id="Results Flow Menu System">
+	<Transform />
+	<!--TouchListener /-->
+	
+	<GameObject id="Objectives Menu" inherit-from="Objectives Menu">
+		<UIObjectivesMenu />
+	</GameObject>
+	<GameObject id="Stats Menu" inherit-from="Stats Menu">
+		<UIStatsMenu />
+	</GameObject>
+	<GameObject id="Progression Menu" inherit-from="Generic Menu">
+		<UIProgressionMenu />
+	</GameObject>
+	
+	<UIMenuSystem initial-menu="Invalid Menu">
+		<UIMenus>
+			<!-- Objectives Menu -->
+			<UIMenu id="Objectives Menu">
+				<UIMenuOption id="retry" text="Retry" />
+				<UIMenuOption id="next" text="Next" transition-to="Stats Menu" />
+			</UIMenu>
+			
+			<!-- Stats Menu -->
+			<UIMenu id="Stats Menu">
+				<UIMenuOption id="back" text="Back" transition-to="Back" />
+				<UIMenuOption id="next" text="Next" transition-to="Progression Menu" />
+			</UIMenu>
+			
+			<!-- Progression Menu -->
+			<UIMenu id="Progression Menu">
+				<UIMenuOption id="retry" text="Retry" />
+				<UIMenuOption id="quit" text="Quit" />
+			</UIMenu>
+		</UIMenus>
+		
+		<UITransitions>
+			<Transition from="Objectives Menu" to="Stats Menu" />
+			<Transition from="Stats Menu" to="Progression Menu" />
+		</UITransitions>
+	</UIMenuSystem>
+</GameObject>

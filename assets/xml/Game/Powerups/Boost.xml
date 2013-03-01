@@ -1,0 +1,10 @@
+<GameObject id="boostpowerup" inherit-from="powerup">
+	<GameObject id="collectable" tag="powerup">
+		<Transform x="0" y="0" size-x="50" size-y="50" align="center" valign="middle" />
+		<!--RigidBody sensor="true" static="true" /-->
+		
+		<Quad texture="gfx/powerups/boost.png" texture-width="50" texture-height="50" />
+	</GameObject>
+	
+	<BoostPowerup />
+</GameObject>

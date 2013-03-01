@@ -1,0 +1,9 @@
+<AnimationClip>
+	<Keyframe time="0.0">
+		<Key field="Quad.mTextureFrameIndex" value="30" />
+	</Keyframe>
+	
+	<Keyframe time="0.2">
+		<Key field="Quad.mTextureFrameIndex" value="34" />
+	</Keyframe>
+</AnimationClip>

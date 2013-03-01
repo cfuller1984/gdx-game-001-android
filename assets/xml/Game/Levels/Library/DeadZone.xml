@@ -1,0 +1,7 @@
+<GameObject id="deadzone" tag="deadzone">
+	<Transform x="0" y="0" size-x="50" size-y="50" align="center" valign="top" />
+	<Material r="1.0" g="0.0" b="1.0" alpha="0.5" />
+	
+	<Quad />
+	<RigidBody sensor="true" static="true" />
+</GameObject>

@@ -1,0 +1,21 @@
+<GameObject id="genericoption">
+	<Transform x="640" y="240" size-x="260" size-y="50" align="center" valign="middle" />
+	<Material r="1.0" g="1.0" b="1.0" alpha="0.8" />
+	
+	<Animation>
+		<AnimationClip path="xml/Library/UI/Options/GenericOption/HoverOn.xml" />
+		<AnimationClip path="xml/Library/UI/Options/GenericOption/HoverOff.xml" />
+	</Animation>
+	
+	<Quad />
+	<!--TouchCollider /-->
+	
+	<UIMenuOptionObject />
+	
+	<GameObject id="text">
+		<Transform x="130" y="25" align="center" valign="middle" />
+		<Material r="0.0" g="0.0" b="0.0" alpha="1.0" />
+		
+		<Text text="Generic Option" />
+	</GameObject>
+</GameObject>

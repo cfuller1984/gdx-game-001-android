@@ -1,0 +1,54 @@
+<Scene>
+	<GameObject id="Main Camera">
+		<Transform x="640" y="360" />
+		<Camera ortho="true" viewportWidth="1280" viewportHeight="720" />
+	</GameObject>
+	
+	<GameObject id="Menu System">
+		<Transform />
+
+		<GameObject id="Holding Menu" inherit-from="Holding Menu" />
+		<GameObject id="Main Menu" inherit-from="Generic Menu">
+			<UIMainMenu />
+		</GameObject>
+		<GameObject id="Options Menu" inherit-from="Generic Menu" />
+		<GameObject id="Upgrades" inherit-from="Generic Menu" />
+
+		<!-- Hierarchy -->
+		<UIMenuSystem initial-menu="Holding Menu">
+			<UIMenus>
+				<!-- Holding Menu -->
+				<UIMenu id="Holding Menu">
+					<UIMenuOption text="Tap to Start" transition-to="Main Menu" />
+				</UIMenu>
+				
+				<!-- Main Menu -->
+				<UIMenu id="Main Menu">
+					<UIMenuOption id="play" text="Play" />
+					<UIMenuOption id="options" text="Options" transition-to="Options Menu" />
+					<UIMenuOption id="upgrades" text="Upgrades" transition-to="Upgrades" />
+					<UIMenuOption id="exit" text="Exit" />
+				</UIMenu>
+				
+				<!-- Options Menu -->
+				<UIMenu id="Options Menu">
+					<UIMenuOption text="Audio" />
+					<UIMenuOption text="Controls" />
+					<UIMenuOption text="Back" transition-to="Back" />
+				</UIMenu>
+				
+				<!-- Shop Menu -->
+				<UIMenu id="Upgrades">
+					<UIMenuOption text="Buy Me" />
+					<UIMenuOption text="Buy Me" />
+					<UIMenuOption text="Back" transition-to="Back" />
+				</UIMenu>
+			</UIMenus>
+
+			<UITransitions>
+				<Transition from="Holding Menu" to="Main Menu" />
+				<Transition from="Main Menu" to="Options Menu" />
+			</UITransitions>
+		</UIMenuSystem>
+	</GameObject>
+</Scene>

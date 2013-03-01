@@ -1,0 +1,31 @@
+<GameObject id="testsection002">
+	<Transform />
+	<LevelSection />
+
+	<!-- Floor Piece -->
+	<GameObject inherit-from="floor">
+		<Transform x="200" y="700" size-x="400" />
+	</GameObject>
+
+	<!-- Boxes -->
+	<GameObject inherit-from="box">
+		<Transform x="200" y="700" />
+	</GameObject>
+	<GameObject inherit-from="box">
+		<Transform x="250" y="700" />
+	</GameObject>
+	<GameObject inherit-from="box">
+		<Transform x="300" y="700" />
+	</GameObject>
+	<GameObject inherit-from="box">
+		<Transform x="225" y="650" />
+	</GameObject>
+	<GameObject inherit-from="box">
+		<Transform x="275" y="650" />
+	</GameObject>
+	
+	<!-- Dead Zone -->
+	<!--GameObject inherit-from="deadzone">
+		<Transform x="475" y="410" size-x="150" size-y="50" />
+	</GameObject-->
+</GameObject>

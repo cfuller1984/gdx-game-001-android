@@ -1,0 +1,37 @@
+<Scene>
+	<Transform />
+	
+	<GameObject id="Pause Menu System">
+		<Transform />
+		<!--TouchListener /-->
+
+		<GameObject id="Pause Menu" inherit-from="Generic Menu">
+			<UIPauseMenu />
+		</GameObject>
+		<GameObject id="Objectives Menu" inherit-from="Objectives Menu">
+			<UIObjectivesMenu />
+		</GameObject>
+
+		<UIMenuSystem initial-menu="Invalid Menu">
+			<UIMenus>
+				<!-- Pause Menu -->
+				<UIMenu id="Pause Menu">
+					<UIMenuOption id="continue" text="Continue" />
+					<UIMenuOption id="restart" text="Restart" />
+					<UIMenuOption id="objectives" text="Objectives" transition-to="Objectives Menu" />
+					<UIMenuOption id="quit" text="Quit" />
+				</UIMenu>
+				
+				<!-- Objectives Menu -->
+				<UIMenu id="Objectives Menu">
+					<UIMenuOption id="back" text="Back" transition-to="Back" />
+					<UIMenuOption id="reset" text="Reset" />
+				</UIMenu>
+			</UIMenus>
+			
+			<UITransitions>
+				<Transition from="Pause Menu" to="Objectives Menu" />
+			</UITransitions>
+		</UIMenuSystem>
+	</GameObject>
+</Scene>

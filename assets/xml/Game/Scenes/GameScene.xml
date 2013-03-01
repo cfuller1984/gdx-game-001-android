@@ -1,0 +1,65 @@
+<Scene>
+	<GameObject id="Main Camera">
+		<Camera ortho="true" viewportWidth="1280" viewportHeight="720" />
+	</GameObject>
+	
+	<GameObject id="Camera 2D">
+		<Transform x="640" y="360" />
+		<Camera ortho="true" viewportWidth="1280" viewportHeight="720" />
+	</GameObject>
+	
+	<!-- We want physics in this level -->
+	<GameObject>
+		<PhysicsWorld gravity="25.0f" />
+	</GameObject>
+	
+	<!-- Process touch input -->
+	<!--TouchListener /-->
+	
+	<!-- The Level -->
+	<GameObject id="Level">
+		<Transform />
+		
+		<!-- Level Background -->
+		<GameObject id="background">
+			<Transform x="0.0" y="0.0" />
+			<LevelBackground enabled="false" />
+		</GameObject>
+		
+		<!-- Level -->
+		<Level />
+		
+		<!-- Player spawn -->
+		<GameObject id="playerspawn">
+			<Transform x="150" y="250" />
+		</GameObject>
+		
+		<!-- Sections -->
+		<GameObject id="sections">
+			<Transform x="0.0" y="0.0" />
+		</GameObject>
+	</GameObject>
+	
+	<!-- Physics Object -->
+	<GameObject inherit-from="player" />
+	
+	<!-- Guard Manager -->
+	<GameObject id="Guard Manager">
+		<GuardManager enabled="false" />
+	</GameObject>
+	
+	<!-- Coin Manager -->
+	<GameObject id="Coin Manager">
+		<CoinManager minSpawnTime="5.0f" maxSpawnTime="15.0f" />
+	</GameObject>
+	
+	<!-- Power Up Manager -->
+	<GameObject id="Powerup Manager">
+		<PowerupManager minSpawnTime="3.0f" maxSpawnTime="3.0f" />
+	</GameObject>
+	
+	<!-- Objectives Manager -->
+	<GameObject id="Objectives Manager">
+		<ObjectivesManager />
+	</GameObject>
+</Scene>

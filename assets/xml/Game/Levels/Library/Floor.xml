@@ -3,5 +3,7 @@
 	<Material r="1.0" g="1.0" b="1.0" alpha="1.0f" />
 
 	<Quad />
-	<RigidBody static="true" friction="0.01f" />
+	<RigidBody static="true" friction="0.01f">
+		<Fixture friction="0.01f" />
+	</RigidBody>
 </GameObject>

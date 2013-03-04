@@ -10,7 +10,7 @@
 	
 	<!-- We want physics in this level -->
 	<GameObject>
-		<PhysicsWorld gravity="25.0f" />
+		<PhysicsWorld gravity="30.0f" />
 	</GameObject>
 	
 	<!-- Process touch input -->

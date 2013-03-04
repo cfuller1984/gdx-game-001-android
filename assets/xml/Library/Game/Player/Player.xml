@@ -1,15 +1,26 @@
 <GameObject id="player">
-	<Transform x="50" y="300" size-x="64" size-y="64" align="center" valign="bottom" />
+	<Transform x="50" y="700" size-x="64" size-y="64" align="center" valign="bottom" />
 	<Material r="0.0" g="0.0" b="1.0" alpha="1.0" />
 
 	<Quad texture="gfx/player.png" texture-width="256" texture-height="308" texture-frame-cols="6" texture-frame-rows="6" />
-	<RigidBody density="5.0f" friction="0.0f" fixed-rotation="true" />
+	<RigidBody friction="0.0f" fixed-rotation="true">
+		<Fixture size-x="64" size-y="64" density="5.0f" body-shape="box" radius="32.0f" />
+		<Fixture y="32" size-x="64" size-y="16" user-data="ground-sensor" />
+		<Fixture x="32" y="-4" size-x="16" size-y="56" user-data="impact-sensor" />
+	</RigidBody>
 
 	<Player />
-	<PlayerController maxTouchSpeed="300.0f" initialSpeed="5.0f" maxSpeed="15.0f" jumpHeight="150.0f" boostSpeed="5.0f" boostAccelerationTime="2.0f" />
+	<PlayerController maxTouchSpeed="300.0f" initialSpeed="6.0f" maxSpeed="15.0f" jumpHeight="180.0f" boostSpeed="8.0f" boostAccelerationTime="2.0f" />
 	
 	<Animation>
 		<AnimationClip path="xml/Library/Game/Player/run.xml" />
 		<AnimationClip path="xml/Library/Game/Player/slide.xml" />
 	</Animation>
+	
+	<GameObject id="countdown" visible="false">
+		<Transform x="32.0f" y="-32.0f" align="center" valign="bottom" />
+		<Material r="1.0f" g="0.0f" b="0.0f" alpha="1.0f" />
+		
+		<Text text="3" />
+	</GameObject>
 </GameObject>
